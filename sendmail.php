@@ -12,9 +12,6 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['subject'])
   }
   
   //
-  mail( "spambox@designlab.co", $_POST['subject'], $_POST['message'], "From:" . $_POST['email'] );
- 
-  //			^
-  //  Replace with your email 
+  mail( "info@kimexinc.com", $_POST['subject'], $_POST['message'], "From:" . $_POST['email'] );
 }
 ?>
