@@ -512,8 +512,8 @@ input:focus {
 }
 .focus-box .service-icon {
 	margin-bottom: 30px;
-	width: 145px;
-	height: 145px;
+	width: 250px;
+	height: 250px;
 	margin: auto;
 	border-radius: 50%;
 	border: 10px solid #ececec;
@@ -611,7 +611,8 @@ input:focus {
 
 .works {
 	padding-bottom: 100px;
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
+	background: #2790B0;
 	min-height: 800px;
 }
 
@@ -628,7 +629,7 @@ input:focus {
 	float: left;
 	overflow: hidden;
 	width: 25%; /* Fallback */
-width: -webkit-calc(100% / 4);
+	width: -webkit-calc(100% / 4);
 	width: calc(100% / 4);
 	-webkit-transition: 0.4s all linear;
 	        transition: 0.4s all linear;
