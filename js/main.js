@@ -7,22 +7,22 @@ app.run(function($rootScope) {
 app.controller('ServiceController', function($scope) {
   $scope.services = [{
     title: 'Mise en place',
-    desc: '',
+    desc: 'Couler du béton par pompe, chariot motorisé, grue ou camion. Utilisation de méthodes sophistiquées pour assuré un nivellement impeccable.',
     image: 'rateau.jpg'
   },
   {
     title: 'Finition',
-    desc: '',
+    desc: 'Polissage de surface de béton à l\'aide une diversité d\'outils spécialisés. Offre des finis lustrés, mats, rugueux, etc.',
     image: 'finition.jpg'
   },
   {
     title: 'Sciage',
-    desc: '',
+    desc: 'Sciage de béton "Soff-Cut" qui élimine le stress structurel, subit avec le temps, et donc les fissures sur la dalle de béton.',
     image: 'sciage.jpg'
   }, 
   {
     title: 'Revêtement',
-    desc: '',
+    desc: 'Application des revêtements protecteurs désirés : durcisseur, sealer, membrane, cure à l\'eau, etc.',
     image: 'revetement.jpg'
   }
   ];
@@ -46,6 +46,12 @@ app.controller('WorkController', function($scope) {
     url: 'http://www.enpq.qc.ca/',
     image: 'nicolet.jpg',
     fade: 'fadeInDown'
+  },
+  {
+    title: 'Condos Place Belvédère',
+    url: 'http://www.place-belvedere.com/',
+    image: 'condos-belvedere.jpg',
+    fade: 'fadeInRight'
   }
   ];
 });
