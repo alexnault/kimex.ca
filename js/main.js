@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []);
+var app = angular.module('kimex', []);
 
 app.run(function($rootScope) {
   $rootScope.today = new Date();
@@ -17,12 +17,12 @@ app.controller('ServiceController', function($scope) {
   },
   {
     title: 'Sciage',
-    desc: 'Sciage de béton "Soff-Cut" qui élimine le stress structurel, subit avec le temps, et donc les fissures sur la dalle de béton.',
+    desc: 'Sciage de béton "Soff-Cut" qui évite les fissures indésirables en éliminant la pression dû au retrait de la dalle lors du mûrissement.',
     image: 'sciage.jpg'
   }, 
   {
     title: 'Revêtement',
-    desc: 'Application des revêtements protecteurs désirés : durcisseur, sealer, membrane, cure à l\'eau, etc.',
+    desc: 'Application des revêtements protecteurs désirés : durcisseur, scellant, membrane, cure à l\'eau, etc.',
     image: 'revetement.jpg'
   }
   ];
@@ -54,6 +54,19 @@ app.controller('WorkController', function($scope) {
     fade: 'fadeInRight'
   }
   ];
+  // Congébec
+  // CBR Laser
+  // Tim Hortons
+  // Couche Tard
+
+  // fadeInLeft
+  // none
+  // none
+  // fadeInRight
+  // fadeInLeft
+  // fadeInUp
+  // fadeInUp
+  // fadeInRight
 });
 
 app.controller('ClientController', function($scope) {
@@ -88,10 +101,15 @@ app.controller('ClientController', function($scope) {
     image: 'jaguar.png'
   },
   {
-    title: 'TD Canada Trust',
-    url: 'https://www.tdcanadatrust.com',
-    image: 'td.png'
+    title: 'Mc Donald\'s',
+    url: 'http://www.mcdonalds.ca',
+    image: 'mcdonalds.png'
   }
+  // {
+  //   title: 'TD Canada Trust',
+  //   url: 'https://www.tdcanadatrust.com',
+  //   image: 'td.png'
+  // }
   ];
 });
 
@@ -114,18 +132,18 @@ app.controller('TeamController', function($scope) {
     desc: ''
   },
   {
+    firstname: 'Alain',
+    lastname: 'Leblanc',
+    title: 'Estimateur',
+    avatar: 'aleblanc.jpg',
+    desc: ''
+  },
+  {
     firstname: 'François',
     lastname: 'Vaillancourt',
     title: 'Cimentier-applicateur',
     avatar: 'fvaillancourt.jpg',
     facebook: 'https://www.facebook.com/fvaillancourt3',
-    desc: ''
-  },
-  {
-    firstname: 'Alain',
-    lastname: 'Leblanc',
-    title: 'Estimateur',
-    avatar: 'aleblanc.jpg',
     desc: ''
   },
   {
