@@ -31,24 +31,28 @@ app.controller('ServiceController', function($scope) {
 app.controller('WorkController', function($scope) {
   $scope.projects = [{
     title: 'Soprema',
+    location: 'Drummondville',
     url: 'http://www.soprema.ca/',
     image: 'soprema.jpg',
     fade: 'fadeInLeft'
   },
   {
     title: 'Hôtel Times',
+    location: 'Sherbrooke',
     url: 'http://www.grandtimeshotel.com/',
     image: 'times.jpg',
     fade: 'fadeInDown'
   },
   {
-    title: 'École de police de Nicolet',
+    title: 'École de police',
+    location: 'Nicolet',
     url: 'http://www.enpq.qc.ca/',
     image: 'nicolet.jpg',
     fade: 'fadeInDown'
   },
   {
     title: 'Condos Place Belvédère',
+    location: 'Sherbrooke',
     url: 'http://www.place-belvedere.com/',
     image: 'condos-belvedere.jpg',
     fade: 'fadeInRight'
@@ -163,19 +167,19 @@ app.controller('TeamController', function($scope) {
     desc: ''
   },
   {
+    firstname: 'Gilles',
+    lastname: 'Lauzon',
+    title: 'Cimentier-applicateur',
+    avatar: 'glauzon.jpg',
+    facebook: 'https://www.facebook.com/gilles.joseegilbert',
+    desc: ''
+  },
+  {
     firstname: 'Martin',
     lastname: 'Prince',
     title: 'Cimentier-applicateur',
     avatar: 'mprince.jpg',
     facebook: 'https://www.facebook.com/martin.prince.52',
-    desc: ''
-  },
-  {
-    firstname: 'Gilles',
-    lastname: 'Lauzon',
-    title: 'Polisseur',
-    avatar: 'glauzon.jpg',
-    facebook: 'https://www.facebook.com/gilles.joseegilbert',
     desc: ''
   },
   {

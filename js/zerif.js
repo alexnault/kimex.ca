@@ -1,14 +1,14 @@
 /* ================================
 ===  BACKGROUND SLIDER        ====
 ================================= */
-$.vegas('slideshow', {
-  delay:7000,
-  backgrounds:[
-    { src:'images/backgrounds/bg1.jpg', fade:1000 },
-    { src:'images/backgrounds/bg2.jpg', fade:1000 },
-    { src:'images/backgrounds/bg3.jpg', fade:1000 }
-  ]
-});
+// $.vegas('slideshow', {
+//   delay:7000,
+//   backgrounds:[
+//     { src:'images/backgrounds/bg1.jpg', fade:1000 },
+//     { src:'images/backgrounds/bg2.jpg', fade:1000 },
+//     { src:'images/backgrounds/bg3.jpg', fade:1000 }
+//   ]
+// });
       
    
 /* =================================
@@ -19,7 +19,7 @@ jQuery(window).load(function() {
         // will first fade out the loading animation
 	jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
-	jQuery(".preloader").delay(1000).fadeOut("slow");
+	jQuery(".preloader").delay(250).fadeOut("slow");
 })
 
 
@@ -157,42 +157,42 @@ $("#contact-form").submit(function (e) {
 ===  PROJECT LOADING           ====
 ================================= */
 
-jQuery(document).ready(function($) {
-    $('.more').on('click', function(event) {
-        event.preventDefault();
+// jQuery(document).ready(function($) {
+//     $('.more').on('click', function(event) {
+//         event.preventDefault();
 
-        var href = $(this).attr('href') + ' .single-project',
-            portfolioList = $('#portfolio-list'),
-            content = $('#loaded-content');
+//         var href = $(this).attr('href') + ' .single-project',
+//             portfolioList = $('#portfolio-list'),
+//             content = $('#loaded-content');
 
-        portfolioList.animate({'marginLeft':'-120%'},{duration:400,queue:false});
-        portfolioList.fadeOut(400);
-        setTimeout(function(){ $('#loader').show(); },400);
-        setTimeout(function(){
-            content.load(href, function() {
-                $('#loaded-content meta').remove();
-                $('#loader').hide();
-                content.fadeIn(600);
-                $('#back-button').fadeIn(600);
-            });
-        },800);
+//         portfolioList.animate({'marginLeft':'-120%'},{duration:400,queue:false});
+//         portfolioList.fadeOut(400);
+//         setTimeout(function(){ $('#loader').show(); },400);
+//         setTimeout(function(){
+//             content.load(href, function() {
+//                 $('#loaded-content meta').remove();
+//                 $('#loader').hide();
+//                 content.fadeIn(600);
+//                 $('#back-button').fadeIn(600);
+//             });
+//         },800);
 
-    });
+//     });
 
-    $('#back-button').on('click', function(event) {
-        event.preventDefault();
+//     $('#back-button').on('click', function(event) {
+//         event.preventDefault();
 
-        var portfolioList = $('#portfolio-list')
-            content = $('#loaded-content');
+//         var portfolioList = $('#portfolio-list')
+//             content = $('#loaded-content');
 
-        content.fadeOut(400);
-        $('#back-button').fadeOut(400);
-        setTimeout(function(){
-            portfolioList.animate({'marginLeft':'0'},{duration:400,queue:false});
-            portfolioList.fadeIn(600);
-        },800);
-    });
-});
+//         content.fadeOut(400);
+//         $('#back-button').fadeOut(400);
+//         setTimeout(function(){
+//             portfolioList.animate({'marginLeft':'0'},{duration:400,queue:false});
+//             portfolioList.fadeIn(600);
+//         },800);
+//     });
+// });
 
 /* ================================
 ===  PARALLAX                  ====
@@ -256,6 +256,3 @@ $(".skill2").knob({
 =================================== */
 
 new WOW().init();
-
-
-

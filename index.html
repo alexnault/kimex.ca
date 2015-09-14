@@ -46,6 +46,10 @@
 
 
 <body>
+<video class="video-bg" loop autoplay muted preload="auto" poster="images/backgrounds/bg1.jpg">
+	<source src="videos/bg.mp4" type="video/mp4">
+</video>
+
 <!-- =========================
    PRE LOADER       
 ============================== -->
@@ -93,20 +97,20 @@
 		
 		<!-- CALL TO ACTION BUTTONS -->
 		<div class="buttons inpage-scroll">
-			<a href="#focus" class="btn btn-primary custom-button blue-btn">Services</a>
-			<a href="#works" class="btn btn-primary custom-button green-btn">Réalisations</a>
+			<a href="#focus" class="btn btn-primary custom-button blue-btn">Services offerts</a>
+			<!-- <a href="#works" class="btn btn-primary custom-button green-btn">Réalisations</a> -->
 		</div>
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
         <div class="row bottom-message-section">
 			<div class="col-lg-4 col-sm-4">
 				<div class="short-text">
-					<i class="icon icon-fontawesome-webfont-358"></i>&nbsp;&nbsp;Service de qualité
+					<i class="icon-fontawesome-webfont-20"></i>&nbsp;&nbsp;Service de qualité
 				</div>
 			</div>
 			<div class="col-lg-4 col-sm-4">
 				<div class="short-text">
-					<i class="icon-fontawesome-webfont-286"></i>&nbsp;&nbsp;Conseils d'expert
+					<i class="icon-fontawesome-webfont-222"></i>&nbsp;&nbsp;Conseils d'expert
 				</div>
 			</div>
 			<div class="col-lg-4 col-sm-4">
@@ -143,7 +147,7 @@
 	<div class="row">
 		
 		<!-- FIRST FOCUS BOXES -->
-		<div class="col-lg-3 col-sm-3 focus-box red wow fadeInLeft animated" ng-repeat="s in services" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.10s">
+		<div class="col-xs-12 col-sm-6 col-lg-3 focus-box red wow fadeInLeft animated" ng-repeat="s in services" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.10s">
 			<div class="service-icon" ng-style="{'background-image':'url(images/services/{{s.image}})'}">
 			</div>
 			<h5 class="red-border-bottom">{{s.title}}</h5> <!-- FOCUS HEADING -->
@@ -165,7 +169,7 @@
 			<li><i class="icon-vcard"></i>Location de main d'oeuvre</li>
 			<li><i class="icon-fontawesome-webfont-344"></i>Réparation</li>
 			<li><i class="icon-fontawesome-webfont-278"></i>Étanchéité des joints de contrôle</li>
-			<li><i class="icon-fontawesome-webfont-11"></i>Imperméabilisation</li>
+			<li><i class="icon-fontawesome-webfont-332"></i>Imperméabilisation</li>
 			<li><i class="icon-fontawesome-webfont-157"></i>Petit coffrage</li>
 		</ul>
 	</div> <!-- / END OTHER FOCUS LIST -->
@@ -214,7 +218,7 @@
 		<!-- PORTFOLIO ITEMS-->
 		<ul class="cbp-rfgrid">
 			<li class="wow animated" ng-repeat="p in projects" ng-class="p.fade" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.10s">
-        <a href="project.html" class="more">
+        <a href="" class="more">
         	<img ng-src="images/portfolio/{{p.image}}" alt="{{p.title}}"/>
 					<div class="project-info">
 						<div class="project-details">
@@ -222,7 +226,7 @@
 								{{p.title}}
 							</h5>
 							<div class="details white-text">
-								{{p.desc}}
+								{{p.location}}
 							</div>
 						</div>
 					</div>
@@ -327,26 +331,26 @@
 	
 	<!-- TEAM MEMBERS -->
 	<div class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.10s">
-		<div class="col-lg-3 col-sm-3" ng-repeat="e in employees">
+		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-2" ng-repeat="e in employees">
 			<div class="team-member">
 				<figure class="profile-pic">
 				<img ng-if="!e.avatar" src="http://freelanceme.net/Images/default%20profile%20picture.png" alt="">
 				<img ng-if="e.avatar" ng-src="images/team/{{e.avatar}}" alt="{{e.firstname}} {{e.lastname}}">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text red-border-bottom">{{e.firstname}} {{e.lastname}}</h5>
+					<h5 class="dark-text red-border-bottom">{{e.firstname}}<br/>{{e.lastname}}</h5>
 					<div class="position">
 						{{e.title}}
 					</div>
 				</div>
 				<div class="social-icons">
 					<ul>
-						<li ng-if="e.facebook"><a ng-href="{{e.facebook}}" target="_blank"><i class="icon-facebook-alt"></i></a></li>
+						<!-- <li ng-if="e.facebook"><a ng-href="{{e.facebook}}" target="_blank"><i class="icon-facebook-alt"></i></a></li>
 						<li ng-if="e.linkedin"><a ng-href="{{e.linkedin}}" target="_blank"><i class="icon-linkedin"></i></a></li>
 						<li ng-if="e.twitter"><a ng-href="{{e.twitter}}" target="_blank"><i class="icon-twitter-alt"></i></a></li>
 						<li ng-style="(e.facebook || e.linkedin || e.twitter) ? {'display':'none'} : {}" style="visibility:hidden;">
 							<a href=""><i class="icon-twitter-alt"></i>
-						</a></li>
+						</a></li> -->
 					</ul>
 				</div>
 				<div class="details" ng-if="e.desc">
