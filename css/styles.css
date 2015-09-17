@@ -1519,3 +1519,6 @@ footer {
 .video-box {
 	overflow: hidden;
 }
+video::-webkit-media-controls {
+  display:none !important;
+}
