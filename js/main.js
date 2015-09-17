@@ -192,9 +192,9 @@ app.controller('TeamController', function($scope) {
   },
   {
     firstname: 'Donald',
-    lastname: 'Rhéaume',
+    lastname: 'Réhaume',
     title: 'Cimentier-applicateur',
-    //avatar: 'drheaume.jpg',
+    avatar: 'drehaume.jpg',
     desc: ''
   },
   {
