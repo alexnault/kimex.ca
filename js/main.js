@@ -52,7 +52,7 @@ app.controller('WorkController', function($scope) {
   },
   {
     title: 'Condos Place Belvédère',
-    location: 'Sherbrooke',
+    location: 'Trois-Rivières',
     url: 'http://www.place-belvedere.com/',
     image: 'condos-belvedere.jpg',
     fade: 'fadeInRight'
