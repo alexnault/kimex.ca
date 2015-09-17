@@ -1,15 +1,13 @@
-@media (min-width: 992px) and (max-width: 1024px) {
+/*@media (min-width: 992px) and (max-width: 1024px) {
      .navbar-right {
         float: none !important;
         margin: auto;
         margin-left: 130px;
     }
     
-}
+}*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    
-    
     /* TOP BAR ELEMENTS */    
 	.responsive-logo {
 		width: 100%;

@@ -420,7 +420,7 @@ input:focus {
 	position: absolute;
 	width: 100%;
 	z-index: 1000;
-	min-height: 60px;
+	min-height: 50px;
 }
 #main-nav.fixed {
 	position: fixed !important;
@@ -429,7 +429,7 @@ input:focus {
 .navbar-inverse .navbar-nav>li {
 	display: inline;
 	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 8px;
 }
 .navbar-inverse .navbar-nav>li:last-child {
 	margin-right: 0 !important;
@@ -440,10 +440,9 @@ input:focus {
 	line-height: 35px;
 }
 .navbar-brand {
-	height: 76px;
+	height: 50px;
 	position: relative;
-	line-height: 45px;
-	padding-top: 23px;
+	padding: 10px 10px 10px 10px;
 }
 .current a {
 	color: #e96656 !important;
@@ -468,7 +467,7 @@ input:focus {
 .navbar-toggle {
 	border: 0;
 	background-color: #808080;
-        margin-top: 23px;
+  margin-top: 10px;
 }
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
 	background-color: #e96656;
