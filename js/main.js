@@ -2,6 +2,7 @@ var app = angular.module('kimex', []);
 
 app.config(function($locationProvider) {
   $locationProvider.html5Mode(true);
+  $locationProvider.hashPrefix('!');
 });
 
 app.run(function($rootScope) {
