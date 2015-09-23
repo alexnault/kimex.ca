@@ -1,5 +1,9 @@
 var app = angular.module('kimex', []);
 
+app.config(function($locationProvider) {
+  $locationProvider.html5Mode(true);
+});
+
 app.run(function($rootScope) {
   $rootScope.today = new Date();
 });
