@@ -1456,47 +1456,6 @@ footer {
 
 /* ========================================= */
 /* -----------------------------------------*/
-/*   SINGLE PROJECT PAGE                     */
-/* -----------------------------------------*/
-/* ========================================= */
-
-.single-project {
-	text-align: left;
-	margin-bottom: 25px;
-}
-.single-project .project-image {
-	width: 100%;
-	float: left;
-	text-align: left;
-	margin-bottom: 25px;
-}
-.single-project h3 {
-	margin-bottom: 10px;
-	padding-bottom: 7px;
-	line-height: 40px;
-	border-bottom: 1px dotted #dadada;
-}
-.single-project .project-description {
-	margin-bottom: 25px;
-}
-.single-project .button {
-	margin-left: 0;
-}
-.single-project .project-information {
-	margin-bottom: 10px;
-}
-.single-project .project-information ul li {
-	border-bottom: 1px dotted #dadada;
-	padding-bottom: 5px;
-	margin-top: 10px;
-}
-.single-project .project-information ul li span {
-	font-weight: 700;
-	margin-right: 5px;
-}
-
-/* ========================================= */
-/* -----------------------------------------*/
 /*   OTHER                                  */
 /* -----------------------------------------*/
 /* ========================================= */
