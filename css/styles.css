@@ -417,15 +417,17 @@ input:focus {
 	        box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.08);
 }
 #main-nav {
-	position: absolute;
+	position: fixed !important;
+	top: 0;
+	/*position: absolute;*/
 	width: 100%;
 	z-index: 1000;
 	min-height: 50px;
 }
-#main-nav.fixed {
+/*#main-nav.fixed {
 	position: fixed !important;
 	top: 0;
-}
+}*/
 .navbar-inverse .navbar-nav>li {
 	display: inline;
 	margin-right: 20px;
