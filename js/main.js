@@ -61,6 +61,34 @@ app.controller('WorkController', function($scope) {
     url: 'http://www.place-belvedere.com/',
     image: 'condos-belvedere.jpg',
     fade: 'fadeInRight'
+  },
+  {
+    title: 'Parc Micro Sciences',
+    location: 'Trois-Rivières',
+    url: 'http://www.idetr.com/fr/nos-infrastructures/parc-micro-sciences/index.aspx',
+    image: 'micro-science-parc-techno-tr.jpg',
+    fade: 'fadeInRight'
+  },
+  {
+    title: 'Condos VV',
+    location: 'Sherbrooke',
+    url: 'http://condosvv.com/',
+    image: 'balcons-condow-sherbrooke.jpg',
+    fade: 'fadeInRight'
+  },
+  {
+    title: 'Chalet',
+    location: 'Manseau',
+    url: '',
+    image: 'chalet-manseau.jpg',
+    fade: 'fadeInRight'
+  },
+  {
+    title: 'Stationnement Desjardins',
+    location: 'Sherbrooke',
+    url: 'https://www.desjardins.com/',
+    image: 'desjardins-parking-sherbrooke.jpg',
+    fade: 'fadeInRight'
   }
   ];
   // Congébec
